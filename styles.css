@@ -1,44 +1,54 @@
  @import url('https://fonts.googleapis.com/css?family=Caveat|Sedgwick+Ave');
 
-h1 {
-    color: black;
+body{
+    font-family: 'Caveat', cursive;
+}
+
+/* se quer que tudo tudinho tenha algo: * {...} 
+    em - faz tamanho relativo de acordo com o tamanho relativo e naquele contexto
+*/
+
+
+ h1 {
+    color: bisque;
     text-align: center;
     font-family: 'Sedgwick Ave', cursive; 
+    text-shadow: 2px 1px black;
 }
 
 .all{
     position: absolute;
-    left: 23%;
-    width: 60%;
+    left: 23vw; /*em vez de 23%, vw - viewport widht / vh - viewport height*/
+    width: 50vw;
+    height: 70vh;
     padding: 10px;
     text-align: justify;
 }
 
-h1{
-    color: bisque;
-    text-shadow: 2px 1px black;
-}
-
 .right {
     position: absolute;
-    right: 0px;
-    width: 50%;
-    padding: 10px;
-    text-decoration: underline;
-    font-family: 'Caveat', cursive;
+    right: 0vw;
+    width: 49%;
+    padding: 5px;
 }
 
 .left {
     position: absolute;
-    left: 0px;
-    width: 45%;
-    padding: 10px;
-    font-family: 'Caveat', cursive;
+    left: 0vw;
+    width: 47%;
+    padding: 5px;
+    background-color: tomato;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border-bottom: 1px solid black;
 }
 
 footer{
-    font-family: 'Caveat', cursive;
-    position: fixed;
-    left: 50;
-    right: 0;
+    position: absolute;
+    left: 17vw;
+    bottom: 0.5vh;
+    float: center;
+    margin: 0 auto; /*em teoria, centraliza as coisas*/
 }
